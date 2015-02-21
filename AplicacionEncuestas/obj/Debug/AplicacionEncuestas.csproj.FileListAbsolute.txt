@@ -1,0 +1,15 @@
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\bin\Debug\AplicacionEncuestas.exe.config
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\bin\Debug\AplicacionEncuestas.exe
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\bin\Debug\AplicacionEncuestas.pdb
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.csprojResolveAssemblyReference.cache
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.InformacionBasica.resources
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.InicioSesion.resources
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.Properties.Resources.resources
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.csproj.GenerateResource.Cache
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.exe
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.pdb
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.PreguntasRadiobutton.resources
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.PreguntasCheckbox.resources
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.PreguntasLibre.resources
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.PreguntasCalificacion.resources
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.frmPadre.resources
