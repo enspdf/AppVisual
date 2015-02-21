@@ -24,6 +24,26 @@ namespace AplicacionEncuestas
         {
             InitializeComponent();
             objEncuesta_seccion3 = objEncuesta;
+            List<string> listaRespuestas3 = objEncuesta_seccion3.NombreControlRptasS3;
+            if (listaRespuestas3 != null)
+            {
+                for (int i = 1; i <= 4; i++)
+                {
+                    string nomControl = "txtRpta" + i.ToString();
+                    Control[] controles = this.Controls.Find(nomControl, true);
+                    if (null != controles && controles.Count() > 0)
+                    {
+                        if (controles[0] is TextBox)
+                        {
+                            TextBox txt = (TextBox)controles[0];
+                            for (int y = 0; y < listaRespuestas3.Count; y++)
+                            {
+                                //txt.Text == "";
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void PreguntasLibre_Load(object sender, EventArgs e)
