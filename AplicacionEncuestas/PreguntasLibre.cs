@@ -39,6 +39,8 @@ namespace AplicacionEncuestas
                             for (int y = 0; y < listaRespuestas3.Count; y++)
                             {
                                 //txt.Text == "";
+                                
+                                
                             }
                         }
                     }
@@ -101,6 +103,7 @@ namespace AplicacionEncuestas
             PreguntasCalificacion preg = new PreguntasCalificacion(objEncuesta_seccion3);
             preg.Show();
             //this.Hide();
+            this.Close();
         }
     }
 }
