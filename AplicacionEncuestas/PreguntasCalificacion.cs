@@ -67,7 +67,7 @@ namespace AplicacionEncuestas
 
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
-            clEncuesta encuesta = new clEncuesta();
+            //clEncuesta encuesta = new clEncuesta();
             List<string> misrpta = new List<string>();
             for (int i = 1; i <= 10; i++)
             {
@@ -89,6 +89,8 @@ namespace AplicacionEncuestas
                 }
             }
             objEncuesta_seccion4.NombreControRptasS4 = misrpta;
+            FrmReporte resultados = new FrmReporte();
+            resultados.Show();
             //Application.Exit();
             this.Close();
         }

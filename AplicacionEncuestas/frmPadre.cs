@@ -22,6 +22,8 @@ namespace AplicacionEncuestas
             InformacionBasica preg = new InformacionBasica();
             preg.MdiParent = this;
             preg.Show();
+            
+            
         }
 
         private void encuestaToolStripMenuItem_Click(object sender, EventArgs e)

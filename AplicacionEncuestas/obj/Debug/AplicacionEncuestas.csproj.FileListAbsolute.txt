@@ -13,3 +13,4 @@ C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncu
 C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.PreguntasLibre.resources
 C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.PreguntasCalificacion.resources
 C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.frmPadre.resources
+C:\Users\Sebastian-pc\Documents\visual studio\AplicacionEncuestas\AplicacionEncuestas\obj\Debug\AplicacionEncuestas.FrmReporte.resources

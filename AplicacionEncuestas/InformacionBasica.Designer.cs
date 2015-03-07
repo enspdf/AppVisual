@@ -42,6 +42,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.chklbPregrado = new System.Windows.Forms.CheckedListBox();
             this.btnSiguiente = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 141);
+            this.label3.Location = new System.Drawing.Point(10, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 13);
             this.label3.TabIndex = 2;
@@ -75,7 +77,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 173);
+            this.label4.Location = new System.Drawing.Point(12, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 3;
@@ -84,7 +86,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 210);
+            this.label5.Location = new System.Drawing.Point(10, 230);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 4;
@@ -93,7 +95,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(80, 245);
+            this.label6.Location = new System.Drawing.Point(80, 267);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(231, 13);
             this.label6.TabIndex = 5;
@@ -116,7 +118,7 @@
             // 
             // dtFecha_Nacimiento
             // 
-            this.dtFecha_Nacimiento.Location = new System.Drawing.Point(138, 135);
+            this.dtFecha_Nacimiento.Location = new System.Drawing.Point(138, 155);
             this.dtFecha_Nacimiento.Name = "dtFecha_Nacimiento";
             this.dtFecha_Nacimiento.Size = new System.Drawing.Size(208, 20);
             this.dtFecha_Nacimiento.TabIndex = 8;
@@ -132,7 +134,7 @@
             "Cartagena",
             "Barranquilla",
             "Pasto"});
-            this.cbCiudad.Location = new System.Drawing.Point(138, 170);
+            this.cbCiudad.Location = new System.Drawing.Point(138, 190);
             this.cbCiudad.Name = "cbCiudad";
             this.cbCiudad.Size = new System.Drawing.Size(208, 21);
             this.cbCiudad.TabIndex = 9;
@@ -140,7 +142,7 @@
             // txtEdad
             // 
             this.txtEdad.Enabled = false;
-            this.txtEdad.Location = new System.Drawing.Point(138, 203);
+            this.txtEdad.Location = new System.Drawing.Point(138, 223);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(208, 20);
             this.txtEdad.TabIndex = 10;
@@ -164,14 +166,14 @@
             "Psicologia",
             "Gastronomia",
             "Negocios Internacionales"});
-            this.chklbPregrado.Location = new System.Drawing.Point(15, 271);
+            this.chklbPregrado.Location = new System.Drawing.Point(15, 293);
             this.chklbPregrado.Name = "chklbPregrado";
             this.chklbPregrado.Size = new System.Drawing.Size(331, 79);
             this.chklbPregrado.TabIndex = 12;
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(146, 359);
+            this.btnSiguiente.Location = new System.Drawing.Point(146, 381);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btnSiguiente.TabIndex = 13;
@@ -179,11 +181,29 @@
             this.btnSiguiente.UseVisualStyleBackColor = true;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 127);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Nº Identificacón:";
+            // 
+            // txtIdentificacion
+            // 
+            this.txtIdentificacion.Location = new System.Drawing.Point(138, 124);
+            this.txtIdentificacion.Name = "txtIdentificacion";
+            this.txtIdentificacion.Size = new System.Drawing.Size(208, 20);
+            this.txtIdentificacion.TabIndex = 15;
+            // 
             // InformacionBasica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 389);
+            this.ClientSize = new System.Drawing.Size(362, 408);
+            this.Controls.Add(this.txtIdentificacion);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.chklbPregrado);
             this.Controls.Add(this.label7);
@@ -221,5 +241,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckedListBox chklbPregrado;
         private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtIdentificacion;
     }
 }

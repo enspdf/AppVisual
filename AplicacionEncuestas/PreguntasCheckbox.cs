@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace AplicacionEncuestas
 {
@@ -19,6 +20,8 @@ namespace AplicacionEncuestas
         }     
 
         private clEncuesta objencuesta_seccion2 = new clEncuesta();
+        public int RespuestasCorrectas2 = 0;
+        public int RespuestasErroneas2 = 0;
 
         public PreguntasCheckbox(clEncuesta encuesta)
         {
@@ -107,6 +110,61 @@ namespace AplicacionEncuestas
                     }
                 }
             }
+            PreguntasRadiobutton rb = new PreguntasRadiobutton();
+            if (chk1_1.Checked == true || chk1_2.Checked == true || chk1_1.Checked == true && chk1_2.Checked == true && chk1_3.Checked == false && chk1_4.Checked == false)
+            {
+                //rb.RC++;
+                RespuestasCorrectas2++;
+            }
+            else if (chk1_3.Checked == true || chk1_4.Checked == true && chk1_1.Checked == false && chk1_2.Checked == false)
+            {
+                //rb.RE++;
+                RespuestasErroneas2++;
+            }
+            if (chk2_2.Checked == true || chk2_3.Checked == true || chk2_2.Checked == true && chk2_3.Checked == true)
+            {
+                //rb.RC++;
+                RespuestasCorrectas2++;
+            }
+            else if (chk2_1.Checked == true || chk2_4.Checked == true)
+            {
+                //rb.RE++;
+                RespuestasErroneas2++;
+            }
+            if (chk3_1.Checked == true || chk3_2.Checked == true || chk3_1.Checked == true && chk3_2.Checked == true)
+            {
+                //rb.RC++;
+                RespuestasCorrectas2++;
+            }
+            else if (chk3_3.Checked == true || chk3_4.Checked == true)
+            {
+                //rb.RE++;
+                RespuestasErroneas2++;
+            }
+            if (chk4_1.Checked == true || chk4_2.Checked == true || chk4_1.Checked == true && chk4_2.Checked == true)
+            {
+                //rb.RC++;
+                RespuestasCorrectas2++;
+            }
+            else if (chk4_3.Checked == true || chk4_4.Checked == true)
+            {
+                //rb.RE++;
+                RespuestasErroneas2++;
+            }
+            if (RespuestasCorrectas2 >= 0 || RespuestasErroneas2 >= 0 || RespuestasCorrectas2 >= 0 && RespuestasErroneas2 >= 0)
+            {
+                StreamWriter escritorbuenas = new StreamWriter("buenas2.txt");
+                StreamWriter escritormalas = new StreamWriter("malas2.txt");
+                
+
+                escritorbuenas.Write(RespuestasCorrectas2 + System.Environment.NewLine);
+                escritormalas.Write(RespuestasErroneas2 + System.Environment.NewLine);
+
+                escritorbuenas.Close();
+                escritormalas.Close();
+            }
+
+            MessageBox.Show("Correctas: " + RespuestasCorrectas2 + " - " + "Erroneas: " + RespuestasErroneas2);
             objencuesta_seccion2.NombreControRptaS2 = misrpta;
             PreguntasLibre preg = new PreguntasLibre(objencuesta_seccion2);
             preg.Show();

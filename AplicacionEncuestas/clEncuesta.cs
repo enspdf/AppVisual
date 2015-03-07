@@ -59,5 +59,18 @@ namespace AplicacionEncuestas
                 _nombreControlRptasS4 = value;
             }
         }
+
+        private List<string> _info;
+        public List<string> Info
+        {
+            get
+            {
+                return _info;
+            }
+            set
+            {
+                _info = value;
+            }
+        }
     }
 }

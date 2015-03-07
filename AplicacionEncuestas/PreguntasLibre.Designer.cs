@@ -57,6 +57,7 @@
             this.txtRpta1.Name = "txtRpta1";
             this.txtRpta1.Size = new System.Drawing.Size(487, 47);
             this.txtRpta1.TabIndex = 1;
+            this.txtRpta1.TextChanged += new System.EventHandler(this.txtRpta1_TextChanged);
             // 
             // btnAnterior
             // 

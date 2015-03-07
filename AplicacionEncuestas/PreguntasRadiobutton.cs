@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace AplicacionEncuestas
 {
@@ -20,6 +21,19 @@ namespace AplicacionEncuestas
         }
 
         private clEncuesta objEncuesta_seccion1 = new clEncuesta();
+        public int RespuestasCorrectas = 0;
+        public int RespuestasErroneas = 0;
+        public int RE;
+        public int RC;
+
+        //public PreguntasRadiobutton(clEncuesta report)
+        //{
+          //  InitializeComponent();
+          //  objEncuesta_seccion1 = report;
+          //  List<string> Finalizacion = objEncuesta_seccion1.Info;
+            
+        //}
+
 
         public PreguntasRadiobutton(clEncuesta objEncuesta)
         {
@@ -48,6 +62,17 @@ namespace AplicacionEncuestas
                                     rd.Checked = true;
                                 }
                             }
+                            //for (int q = 0; q <= 4; q++)
+                            //{
+                              //  if (nomcontrol == listaRespuestas[q])
+                                //{
+                                  //  RespuestasCorrectas++;
+                                //}
+                                //else
+                                //{
+                                  //  RespuestasErroneas++;
+                                //}
+                            //}
                         }
                     }
                 }
@@ -79,10 +104,62 @@ namespace AplicacionEncuestas
                 }                
             }
             objEncuesta_seccion1.NombresControlesRptaS1 = mirspt;
+            if (rb1_1.Checked == true)
+            {
+                RespuestasCorrectas++;
+            }
+            else if (rb1_2.Checked == true || rb1_3.Checked == true || rb1_4.Checked == true)
+            {
+                RespuestasErroneas++;
+            }
+            if (rb2_2.Checked == true)
+            {
+                RespuestasCorrectas++;
+            }
+            else if (rb2_1.Checked == true || rb2_3.Checked == true || rb2_4.Checked == true)
+            {
+                RespuestasErroneas++;
+            }
+            if (rb3_4.Checked == true)
+            {
+                RespuestasCorrectas++;
+            }
+            else if (rb3_1.Checked == true || rb3_2.Checked == true || rb3_3.Checked == true)
+            {
+                RespuestasErroneas++;
+            }
+            if (rb4_1.Checked == true)
+            {
+                RespuestasCorrectas++;
+            }
+            else if (rb4_2.Checked == true || rb4_3.Checked == true || rb4_4.Checked == true)
+            {
+                RespuestasErroneas++;
+            }
+            if (RespuestasCorrectas >= 0 || RespuestasErroneas >= 0 || RespuestasCorrectas >= 0 && RespuestasErroneas >= 0)
+            {
+                StreamWriter escritorbuenas = new StreamWriter("buenas1.txt");
+                StreamWriter escritormalas = new StreamWriter("malas1.txt");
+                
 
+                escritorbuenas.Write(RespuestasCorrectas + System.Environment.NewLine);
+                escritormalas.Write(RespuestasErroneas + System.Environment.NewLine);
+
+                escritorbuenas.Close();
+                escritormalas.Close();
+            }
+
+            RC = RespuestasCorrectas;
+            RE = RespuestasErroneas;
+
+            
+            
+            
+            MessageBox.Show("Correctas: " + RC + " - " + "Erroneas: " + RE);
             PreguntasCheckbox preg = new PreguntasCheckbox(objEncuesta_seccion1);
             preg.Show();
             this.Close();
+            
 
         }
 
@@ -100,7 +177,7 @@ namespace AplicacionEncuestas
         {
             InformacionBasica info = new InformacionBasica();
             info.Show();
-            this.Hide();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

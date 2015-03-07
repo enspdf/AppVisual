@@ -27,24 +27,10 @@ namespace AplicacionEncuestas
             List<string> listaRespuestas3 = objEncuesta_seccion3.NombreControlRptasS3;
             if (listaRespuestas3 != null)
             {
-                for (int i = 1; i <= 4; i++)
-                {
-                    string nomControl = "txtRpta" + i.ToString();
-                    Control[] controles = this.Controls.Find(nomControl, true);
-                    if (null != controles && controles.Count() > 0)
-                    {
-                        if (controles[0] is TextBox)
-                        {
-                            TextBox txt = (TextBox)controles[0];
-                            for (int y = 0; y < listaRespuestas3.Count; y++)
-                            {
-                                //txt.Text == "";
-                                
-                                
-                            }
-                        }
-                    }
-                }
+                txtRpta1.Text = listaRespuestas3[0];
+                txtRpta2.Text = listaRespuestas3[1];
+                txtRpta3.Text = listaRespuestas3[2];
+                txtRpta4.Text = listaRespuestas3[3];
             }
         }
 
@@ -104,6 +90,11 @@ namespace AplicacionEncuestas
             preg.Show();
             //this.Hide();
             this.Close();
+        }
+
+        private void txtRpta1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
